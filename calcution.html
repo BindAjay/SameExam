@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1 st Number :<input type="text" id="first"><br>
+    2 nd Number :<input type="text"  id="second"><br>
+    <Button id="Mul">Multiply</Button>
+    <button id="div">Divide</button>
+    <br><br>
+    The Result Is : 
+    <p></p>
+</body>
+<script>
+ var  a = document.querySelector("#first").value;
+ var b = document.querySelector("#second").value;
+ console.log(a);
+ document.querySelector("#Mul").addEventListener("click", function(){
+        var x = a * b ;
+        document.querySelector("p").innerHTML = x ;
+        console.log(x);
+ });
+ document.querySelector("#div").addEventListener("click",function(){
+        var x = a / b ;
+        document.querySelector("p").innerHTML = x ;
+ });
+ var Ul = document.URL ;
+ document.querySelector("p").innerHTML = Ul ;
+ console.log('URL of This Page ',Ul);
+</script>
+</html>
